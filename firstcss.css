@@ -1,0 +1,22 @@
+h1 {
+    color: teal;
+    background-color: beige;
+    font-family: arial;
+    border: hidden;
+    }
+    
+    p {
+        color: navy;
+        background-color: orangered; 
+        font-family: 'Times New Roman', Times, serif;
+        border: thick
+    
+    }
+    
+    li {
+        color: cyan;
+        background-color: red;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border:thin
+    
+    }
