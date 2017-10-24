@@ -1,0 +1,13 @@
+p{
+    line-height: 2em;
+    margin: auto 3%;
+    font-size: 30px;
+    position: absolute
+}
+
+div{
+    height: 35em;
+    width: 35em;
+    position: fixed;
+}
+
