@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>echo-er</title>
+    <style>
+        body {
+            background-color: rebeccapurple;
+        }
+
+        h1 {
+            margin-top: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>rawr</h1>
+    <script>
+        var header = document.querySelector("h1")
+        document.addEventListener("keypress", function (event) {
+           header.innerHTML += event.key  
+            if(event.key >= "A" && event.key <= "Z"){
+                header.style.textDecoration = "underline"
+            }
+            else if(".?!".includes(event.key)){
+                header.style.textDecoration = "none"
+            }
+        })
+
+    </script>
+</body>
+
+</html>
