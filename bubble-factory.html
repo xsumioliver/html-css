@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button>Build a Bubble</button>
+    <script>
+        var button_ = document.querySelector("button");
+        button_.addEventListener("click", function(event){
+            var myImage = document.createElement("img")
+            myImage.src = "https://sophosnews.files.wordpress.com/2017/05/shutterstock_296886146.jpg?w=70"
+            event.target.appendChild(myImage)
+
+        })
+
+    </script>
+</body>
+</html>
+
