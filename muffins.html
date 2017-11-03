@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="eat">Eat a Muffin</button>
+    <button id="bake">Bake Muffins</button>
+
+    <h1>​**"Muffin​ ​Count:​ ​10"</h1>
+    
+    <script >
+    
+h1 = document.querySelector("h1")
+
+document.getElementById("eat").addEventListener("click", function(){
+    h1.innerText = h1.innerText.replace(/[0-9]+/, Number(h1.innerText.match(/[0-9]+/))-1)
+})
+
+document.getElementById("bake").addEventListener("click", function(){
+    h1.innerText = h1.innerText.replace(/[0-9]+/, Number(h1.innerText.match(/[0-9]+/))+5)
+})
+
+window.addEventListener("click", function(){
+    window.localStorage.setItem("i", h1.innerText)
+})
+
+h1.innerText = window.localStorage.getItem("i")
+    
+    </script>
+</body>
+</html>
